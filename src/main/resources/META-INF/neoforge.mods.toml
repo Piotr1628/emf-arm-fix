@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mixins]]
+config="mt_artifice_hand_fix.mixins.json"
+
+[[mods]]
+modId="mt_artifice_hand_fix"
+version="${version}"
+displayName="MT: Artifice Hand Fix"
+authors="Pitersonix"
+description='''Keeps Iron's Artifice first-person hands in front of the gun model when Entity Model Features is installed.'''
+
+[[dependencies.mt_artifice_hand_fix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.mt_artifice_hand_fix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.mt_artifice_hand_fix]]
+modId="irons_artifice"
+type="required"
+versionRange="[1.1.0,)"
+ordering="AFTER"
+side="CLIENT"
+
+[[dependencies.mt_artifice_hand_fix]]
+modId="entity_model_features"
+type="required"
+versionRange="[3.3,)"
+ordering="AFTER"
+side="CLIENT"
